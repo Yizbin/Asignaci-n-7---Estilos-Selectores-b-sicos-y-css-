@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Abraham Coronel</title>
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="about.html">Sobre mí</a> |
+            <a href="skills.html">Habilidades</a> |
+            <a href="projects.html">Proyectos</a> |
+            <a href="experience.html">Experiencia</a> |
+            <a href="contact.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Enviame un mensaje</h2>
+            <form action="#" method="POST">
+                <p>
+                    <label for="nombre">Nombre completo:</label><br>
+                    <input type="text" id="nombre" name="nombre" required>
+                </p>
+
+                <p>
+                    <label for="email">Correo electronico:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="tel">Telofono (10 dígitos):</label><br>
+                    <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" required>
+                </p>
+
+                <p>
+                    <label for="asunto">Asunto:</label><br>
+                    <select id="asunto" name="asunto">
+                        <option value="consulta">Consulta General</option>
+                        <option value="proyecto">Propuesta de Proyecto</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea>
+                </p>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Abraham Coronel</p>
+    </footer>
+</body>
+</html>
